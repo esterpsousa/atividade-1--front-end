@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato — Everden</title>
+  <meta name="description" content="Fale com a Everden. Preencha o formulário e conte qual produto sustentável chamou sua atenção.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.className += " js";</script>
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAVEGAÇÃO ===================== -->
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a href="index.html" class="brand" aria-label="Everden — página inicial">
+        <svg class="brand__mark" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M6.05 8.05c-2.73 2.73-2.73 7.15-.02 9.88 1.47-3.4 4.09-6.24 7.36-7.93-2.77 2.34-4.71 5.61-5.39 9.32 2.6 1.23 5.8.78 7.95-1.37C19.43 14.47 20 4 20 4S9.53 4.57 6.05 8.05z"/>
+        </svg>
+        <span class="brand__word">everden</span>
+      </a>
+
+      <nav class="nav" id="nav-menu" aria-label="Navegação principal">
+        <a href="index.html#inicio">Início</a>
+        <a href="index.html#produtos">Produtos</a>
+        <a href="index.html#materiais">Materiais</a>
+        <a href="index.html#sustentabilidade">Sustentabilidade</a>
+        <a href="index.html#comparar">Comparar</a>
+        <a href="contato.html" aria-current="page">Contato</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="index.html" class="btn btn--ghost">Voltar ao início</a>
+        <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== CABEÇALHO DA PÁGINA ===================== -->
+    <section class="contact-hero">
+      <div class="wrap">
+        <a href="index.html" class="back-link"><span class="ar" aria-hidden="true">→</span> Voltar para a página inicial</a>
+        <p class="eyebrow">Contato</p>
+        <h1>Vamos conversar?</h1>
+        <p>Quer saber mais sobre algum produto Everden? Preencha o formulário e conte qual produto chamou sua atenção. Nossa equipe entrará em contato com mais informações.</p>
+      </div>
+    </section>
+
+    <!-- ===================== FORMULÁRIO ===================== -->
+    <section class="section">
+      <div class="wrap contact-grid">
+        <form id="form-contato" class="form" novalidate>
+          <div class="field">
+            <label for="nome">Nome <span class="req" aria-hidden="true">*</span></label>
+            <input type="text" id="nome" name="nome" autocomplete="name" placeholder="Seu nome completo" required>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="email">E-mail <span class="req" aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" autocomplete="email" placeholder="voce@email.com" required>
+            </div>
+            <div class="field">
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" name="telefone" autocomplete="tel" placeholder="(00) 00000-0000">
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="produto">Produto de interesse</label>
+              <select id="produto" name="produto">
+                <option value="">Selecione</option>
+                <option>Everden Tote</option>
+                <option>Everden Bag</option>
+                <option>Everden Box</option>
+                <option>Outros</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="material">Material de interesse</label>
+              <select id="material" name="material">
+                <option value="">Selecione</option>
+                <option>Milho + Mandioca</option>
+                <option>Bambu</option>
+                <option>Ainda não sei</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Conte o que você gostaria de saber."></textarea>
+          </div>
+
+          <p class="form-note">Os campos marcados com <span class="req">*</span> são obrigatórios.</p>
+          <button type="submit" class="btn form__submit">Solicitar informações <span class="ar" aria-hidden="true">→</span></button>
+
+          <p class="feedback" id="form-feedback"></p>
+        </form>
+
+        <aside class="aside-card" aria-label="Informações de atendimento">
+          <h2>Como funciona</h2>
+          <p>Este é um catálogo criado para um projeto acadêmico. O formulário demonstra como uma solicitação de informações funcionaria — sem envio real a um servidor.</p>
+          <ul class="aside-list">
+            <li><span class="k">01</span><span>Escolha o produto e o material que despertaram seu interesse.</span></li>
+            <li><span class="k">02</span><span>Descreva sua dúvida na mensagem, se quiser.</span></li>
+            <li><span class="k">03</span><span>Ao enviar, você recebe uma confirmação simulada na tela.</span></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div>
+          <a href="index.html" class="brand brand--light" aria-label="Everden — página inicial">
+            <svg class="brand__mark" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M6.05 8.05c-2.73 2.73-2.73 7.15-.02 9.88 1.47-3.4 4.09-6.24 7.36-7.93-2.77 2.34-4.71 5.61-5.39 9.32 2.6 1.23 5.8.78 7.95-1.37C19.43 14.47 20 4 20 4S9.53 4.57 6.05 8.05z"/>
+            </svg>
+            <span class="brand__word">everden</span>
+          </a>
+          <p class="footer__slogan">Pequenas escolhas, grandes futuros.</p>
+        </div>
+        <nav class="footer__col" aria-label="Navegação do rodapé">
+          <h3>Explorar</h3>
+          <a href="index.html#produtos">Produtos</a>
+          <a href="index.html#materiais">Materiais</a>
+          <a href="index.html#sustentabilidade">Sustentabilidade</a>
+          <a href="index.html#comparar">Comparar</a>
+        </nav>
+        <nav class="footer__col" aria-label="Atendimento">
+          <h3>Atendimento</h3>
+          <a href="contato.html">Contato</a>
+          <a href="index.html">Página inicial</a>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>© <span data-year>2026</span> Everden — projeto acadêmico fictício.</p>
+        <p>Feito com HTML5, CSS3 e JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
